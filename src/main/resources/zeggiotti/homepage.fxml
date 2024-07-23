@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zeggiotti.HomepageController">
+   <children>
+      <AnchorPane layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="600.0">
+         <children>
+            <Rectangle fx:id="rectangle" fill="DODGERBLUE" height="203.0" layoutX="295.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+            <ImageView fx:id="imageView" fitHeight="326.0" fitWidth="363.0" layoutX="137.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+            <AnchorPane fx:id="firstStringPane" layoutX="406.0" layoutY="244.0" prefHeight="40.0" prefWidth="137.0">
+               <children>
+                  <ComboBox fx:id="firstStringBox" layoutX="69.0" layoutY="8.0" prefHeight="25.0" prefWidth="69.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="secondStringPane" layoutX="406.0" layoutY="186.0" prefHeight="40.0" prefWidth="138.0">
+               <children>
+                  <ComboBox fx:id="secondStringBox" layoutX="68.0" layoutY="8.0" prefHeight="25.0" prefWidth="69.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="thirdStringPane" layoutX="407.0" layoutY="131.0" prefHeight="40.0" prefWidth="138.0">
+               <children>
+                  <ComboBox fx:id="thirdStringBox" layoutX="68.0" layoutY="8.0" prefHeight="25.0" prefWidth="69.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="fourthStringPane" layoutX="55.0" layoutY="130.0" prefHeight="40.0" prefWidth="137.0">
+               <children>
+                  <ComboBox fx:id="fourthStringBox" layoutY="8.0" prefHeight="25.0" prefWidth="69.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="fifthStringPane" layoutX="55.0" layoutY="185.0" prefHeight="40.0" prefWidth="137.0">
+               <children>
+                  <ComboBox fx:id="fifthStringBox" layoutY="8.0" prefHeight="25.0" prefWidth="69.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sixthStringPane" layoutX="55.0" layoutY="242.0" prefHeight="40.0" prefWidth="138.0">
+               <children>
+                  <ComboBox fx:id="sixthStringBox" layoutY="8.0" prefHeight="25.0" prefWidth="69.0" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="offsetText" layoutX="269.0" layoutY="69.0" stroke="WHITE" strokeType="OUTSIDE" text="Texg" textAlignment="CENTER" wrappingWidth="56.080078125">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="openItem" mnemonicParsing="false" text="Open" />
+                  <MenuItem fx:id="saveItem" mnemonicParsing="false" text="Save" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
